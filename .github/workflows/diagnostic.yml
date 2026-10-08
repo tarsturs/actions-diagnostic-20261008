@@ -1,0 +1,11 @@
+name: Actions account diagnostic
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - run: printf 'Actions account diagnostic succeeded\n'
